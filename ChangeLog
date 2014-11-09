@@ -1,0 +1,37 @@
+bloonix-plugins-nginx (0.8) released at 2014-11-03
+
+    * Updated the license information.
+
+bloonix-plugins-nginx (0.7) released at 2014-08-25
+
+    * Licence added and old releases deleted.
+
+blonix-plugins-nginx (0.6) released at 2014-03-23
+
+    * Complete rewrite of all plugins.
+
+bloonix-plugins-nginx (0.5) released at 2013-05-14
+
+    * The statistics of all plugins is now printed in JSON format.
+
+bloonix-plugins-nginx (0.4) released at 2012-03-14
+
+    * Improved the yaml file handling.
+
+bloonix-plugins-nginx (0.3) released at 2011-11-29
+
+    * Updated the plugin-* files.
+
+bloonix-plugins-nginx (0.2) released at 2011-07-01
+
+    * Renamed environment variable YAML_FILE_BASEDIR to
+      PLUGIN_LIBDIR.
+    * Fixed wrong environment variable CHECK_SERVICE_NAME
+      and renamed it to CHECK_COMMAND_NAME.
+    * Kicked unused option o_stat.
+    * Changed the default error status from WARNING to
+      CRITICAL.
+
+bloonix-plugins-nginx (0.1) released at 2011-05-05
+
+    * Initial release.

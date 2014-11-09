@@ -1,0 +1,48 @@
+bloonix-plugins-nginx (0.8-1) unstable; urgency=low
+
+    * Updated the license information.
+
+ -- Jonny Schulz <js@bloonix.de>  Mon, 03 Nov 2014 21:17:33 +0100
+
+bloonix-plugins-nginx (0.7-1) unstable; urgency=low
+
+    * Licence added and old releases deleted.
+
+ -- Jonny Schulz <js@bloonix.de>  Tue, 26 Aug 2014 11:44:01 +0200
+
+bloonix-plugins-nginx (0.6-1) unstable; urgency=low
+
+    * Complete rewrite of all plugins.
+
+ -- Jonny Schulz <js@bloonix.de>  Sat, 23 Mar 2014 00:00:00 +0100
+
+bloonix-plugins-nginx (0.4-1) unstable; urgency=low
+
+  * Improved the yaml file handling.
+
+ -- Jonny Schulz <js@bloonix.de>  Wed, 14 Mar 2012 20:06:38 +0100
+
+bloonix-plugins-nginx (0.3-1) unstable; urgency=low
+
+  * Updated the plugin-* files.
+
+ -- Jonny Schulz <js@bloonix.de>  Tue, 29 Nov 2011 13:04:04 +0100
+
+bloonix-plugins-nginx (0.2-1) unstable; urgency=low
+
+  * Renamed environment variable YAML_FILE_BASEDIR to
+    PLUGIN_LIBDIR.
+  * Fixed wrong environment variable CHECK_SERVICE_NAME
+    and renamed it to CHECK_COMMAND_NAME.
+  * Kicked unused option o_stat.
+  * Changed the default error status from WARNING to
+    CRITICAL.
+
+ -- Jonny Schulz <js@bloonix.de>  Fri, 01 Jul 2011 15:22:23 +0200
+
+bloonix-plugins-nginx (0.1-1) unstable; urgency=low
+
+  * Initial release.
+
+ -- unknown <js@bloonix.de>  Tue, 21 Jun 2011 12:09:26 +0200
+

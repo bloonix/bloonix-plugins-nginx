@@ -1,0 +1,114 @@
+plugin {
+    id 44
+    plugin Nginx.Check
+    command check-nginx
+    datatype statistic
+    category System,Webserver,Nginx
+    netaccess yes
+    prefer localhost
+    abstract Nginx server status
+    description Nginx statistics
+}
+
+statistic {
+    statkey connections
+    alias Connections
+    datatype bigint
+    description Number of all open connections including connections to backends.
+}
+
+statistic {
+    statkey accepts
+    alias Accepted
+    datatype float
+    description Accepted connections per second.
+}
+
+statistic {
+    statkey handled
+    alias Handled connections
+    datatype float
+    description Handled connections per seconds.
+}
+
+statistic {
+    statkey requests
+    alias Requests
+    datatype float
+    description Handled requests per second.
+}
+
+statistic {
+    statkey reading
+    alias Reading
+    datatype bigint
+    description Current worker that reads request header.
+}
+
+statistic {
+    statkey writing
+    alias Writing
+    datatype bigint
+    description Current worker that reads request body, processes request, or writes response to a client.
+}
+
+statistic {
+    statkey waiting
+    alias Waiting
+    datatype bigint
+    description Current worker in keep alive status.
+}
+
+chart {
+    id 1
+    title Nginx - worker connection status
+    options {
+        ylabel count
+        units null
+        chart-type area
+        series {
+            name reading
+            color \#ffdc00
+        }
+        series {
+            name writing
+            color \#ff9c00
+        }
+        series {
+            name waiting
+            color \#ff5c00
+        }
+    }
+}
+
+chart {
+    id 2
+    title Nginx - connections/s
+    options {
+        ylabel connections/s
+        units null
+        chart-type area
+        series {
+            name handled
+            color \#005467
+        }
+        series {
+            name accepts
+            color \#ff7a0d
+        }
+    }
+}
+
+chart {
+    id 3
+    title Nginx - requests/s
+    options {
+        ylabel requests/s
+        units null
+        chart-type area
+        series {
+            name requests
+            color \#005467
+        }
+    }
+}

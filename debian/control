@@ -1,0 +1,13 @@
+Source: bloonix-plugins-nginx
+Section: net
+Priority: extra
+Maintainer: Jonny Schulz <js@bloonix.de>
+Build-Depends: debhelper (>= 7)
+Standards-Version: 3.7.3
+Homepage: http://www.bloonix.de/
+
+Package: bloonix-plugins-nginx
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, bloonix-core, curl
+Description: Bloonix Plugins Nginx
+ bloonix-plugins-nginx provides scripts to check the nginx webserver status
